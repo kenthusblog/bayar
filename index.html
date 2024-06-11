@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Online Zakat Calculator: Calculate in different Currencies</title>
+    <link type="text/css" rel="stylesheet" href="/css/inheritance.css">    
+  
+   
+</head>
+
+<body class="">
+
+<div class="container-fluid">
+
+<div class="header-wrap">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="/">Zakat Calculator <span>Calculate Your Zakat Online</span></a>
+            </div>
+            <div class="header-right">
+            	<ul>
+                    <li class="menu-has-child">
+                        <a href="#">Inheritance</a>
+                        <ul class="sub-menu">
+                            <li><a href="/en/online-inheritance-calculater/">Online Calculator</a></li>
+                            <li><a href="/inheritance-blog/">Blog</a></li>
+                            <li><a href="/inheritance-blog/islamic-inheritance-laws-rules/">Rules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/online-zakat-calculator/">Zakat Calculator</a></li>
+                </ul>
+	            <div class="theme-mode">
+	                <button id="toggle-mode">Light Dark</button>
+	            </div>            	
+            </div>
+        </header>
+    </div>
+</div>
+<!--main start -->
+<div class="main-wrap zakat-wrap">
+    <div id="js-logic">
+        <b id="totalAssets"></b>
+        <b id="totalDebts"></b>
+        <b id="netAssets"></b>
+        <b id="payableZakat"></b>
+        <b id="nisab">584.31</b> 
+    </div>
+    <div class="container" style="max-width: 1170px;">
+        <div class="zakat-main">
+            <section class="zakat-left">
+                <h1>Calculate your zakat accurately</h1>
+                <form action="" class="zakat-calculator">
+                    <div class="zakat-left-inner">
+                        <h2>What I own</h2>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>Cash</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="payable-field" type="number" min="0" name="cash" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>Gold and Silver</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="payable-field" type="number" min="0" name="Gold" placeholder="Gold">
+                                </div>
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="payable-field" type="number" min="0" name="Silver" placeholder="Silver">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>Pensions</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="payable-field" type="number" min="0" name="pensions" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>Money owed to me</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="payable-field" type="number" min="0" name="money_owed" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>ISAs and trust</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="payable-field" type="number" min="0" name="isas" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zakat-left-inner zakat-owe">
+                        <h2>What I owe</h2>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>Mortgage</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="debt-field" type="number" min="0" name="mortgage" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>Personal loans</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="debt-field" type="number" min="0" name="personal_loans" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>Bills</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="debt-field" type="number" min="0" name="bills" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box zakat-accordion">
+                            <div class="zakat-accordion-title">
+                                <div class="accordion-title">
+                                    <h3>Credit card</h3>
+                                </div>
+                            </div>
+                            <div class="zakat-accordion-field">
+                                <div class="accordion-field">
+                                    <span class="currency-symbol">$</span>
+                                    <input class="debt-field" type="number" min="0" name="credit_card" placeholder="00.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="theme-btn">Calculate my zakat</a>
+                    <div class="zakat-left-inner your-zakat">
+                        <h2>Your Zakat</h2>
+                        <div class="field-box">
+                            <div class="zakat-row">
+                                <div class="zakat-col">
+                                    <h3>What I have:</h3>
+                                    <p class="zakat-have"><span class="currency-symbol">$</span><span class="totalAssets">0.00</span></p>
+                                </div>
+                                <div class="zakat-col">
+                                    <h3>What I owe:</h3>
+                                    <p class="zakat-owe"><span class="currency-symbol">$</span><span class="totalDebts">0.00</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <div class="zakat-row">
+                                <div class="zakat-col">
+                                    <h3>Is equal to:</h3>
+                                    <p class="zakat-equal"><span class="currency-symbol">$</span><span class="netAssets">0.00</span></p>
+                                </div>
+                                <div class="zakat-col">
+                                    <h3>Today’s nisab is:</h3>
+                                    <p class="zakat-nisab"><span class="currency-symbol">$</span><span class="nisab">584.31</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-box my-zakat">
+                            <h3>My Zakat is:</h3>
+                            <p class="total-zakat"><span class="currency-symbol">$</span><span class="payableZakat">0.00</span></p>
+                            <p id="equalTZ"></p>
+                        </div>
+                    </div>
+                </form>
+                <div class="field-box">
+                    <form action="" class="email-form">
+                        <div class="form-field email-group">
+                            <input type="email" name="email" placeholder="Email address">
+                            <button class="theme-btn">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="zakat-right">
+                <h3>Select Currency</h3>
+                <div class="currency-dropdown">
+                    <div class="currency-dropdown__title">USD ($)</div>
+                    <ul class="currency-tabs currency-dropdown__list">
+                        <li class="currency-tab active">
+                            <a href="#" id="currency-USD" data-symbol="$" data-conversion="1" class="current">USD ($)</a>
+                        </li>
+                        <li class="currency-tab">
+                            <a href="#" id="currency-GBP" data-symbol="£" data-conversion="0.786">GBP (£)</a>
+                        </li>
+                        <li class="currency-tab">
+                            <a href="#" id="currency-EUR" data-symbol="€" data-conversion="0.929">EUR (€)</a>
+                        </li>
+                        <li class="currency-tab">
+                            <a href="#" id="currency-PKR" data-symbol="Rs" data-conversion="278.9097">PKR (Rs.)</a>
+                        </li>
+                        <li class="currency-tab">
+                            <a href="#" id="currency-PKR" data-symbol="₹" data-conversion="83.54">INR (₹.)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="zakat-value total-value">
+                    <p>What I have:</p>
+                    <p class="total-amount"><span class="currency-symbol">$</span><span class="totalAssets">0.00</span></p>
+                </div>
+                <div class="zakat-value owe-value">
+                    <p>What I owe:</p>
+                    <p class="owe-amount"><span class="currency-symbol">$</span><span class="totalDebts">0.00</span></p>
+                </div>
+                <div class="zakat-value equal-value">
+                    <p>Is equal to:</p>
+                    <p class="equal-amount"><span class="currency-symbol">$</span><span class="netAssets">0.00</span></p>
+                </div>
+                <div class="zakat-value nisab-value">
+                    <p>Today’s nisab is:</p>
+                    <p class="nisab-amount"><span class="currency-symbol">$</span><span class="nisab">584.31</span></p>
+                </div>
+                <div class="zakat-value total-zakat">
+                    <p>My zakat is:</p>
+                    <p class="zakat-amout"><span class="currency-symbol">$</span><span class="payableZakat">0.00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--main end -->
+
+<div class="footer-wrap">
+	    <div class="container">
+	        <footer>
+	            <p>&copy; 2023 <a href="https://mohammadharoon.com/">mohammadharoon.com</a> All Rights Reserved. </p>
+	        </footer>
+	    </div>
+	</div>
+</div>
+<script type="text/javascript" src="/js/scripts.js"></script>
+<script type="text/javascript" src="/js/zakat.js"></script>
+</body>
+</html>
