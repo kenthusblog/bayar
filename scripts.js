@@ -561,3 +561,9 @@ $(document).ready(function() {
         }
     });
 });
+
+
+var footer = document.createElement('footer');
+  footer.innerHTML = '<div style="padding: 10px; font-size: 15px; text-align: center; background-color: #24bb81; margin-bottom: 5px; display: flex; justify-content: space-between; font-weight: bold;">© 2023 <a href="https://www.panjinawangkung.com">www.panjinawangkung.com</a></div>';
+  document.body.appendChild(footer);
+  document.getElementById('copyright').remove();
