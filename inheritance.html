@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Islamic Inheritance Laws: Understanding the Rules and Distribution</title>
+
+    <meta name="description" content="Learn about Islamic inheritance laws, rules, and distribution to ensure fair and legal wealth distribution in accordance with Islamic principles." />
+    <meta name="keywords" content="inheritance calculator, islamic inheritance, online calculator, multilingual online calculator, alfaraid, sharia inheritance law, islamic succession law, islamic bequeath, Quranic shares, division, islamic legal heirs, inheritance rules, hanafi, maliki, shafi, hanbali" />
+
+    <link rel="canonical" href="https://zakat.panjinawangkung.com/inheritance.html">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://zakat.panjinawangkung.com/inheritance.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Islamic Inheritance Laws: Understanding the Rules and Distribution">
+    <meta property="og:description" content="Learn about Islamic inheritance laws, rules, and distribution to ensure fair and legal wealth distribution in accordance with Islamic principles.">
+    <meta property="og:image" content="https://islamic-inheritance.mohammadharoon.com/images/islamic-inheritance-calculator-english.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="islamic-inheritance.mohammadharoon.com">
+    <meta property="twitter:url" content="https://islamic-inheritance.mohammadharoon.com/en/online-inheritance-calculater/miras.php">
+    <meta name="twitter:title" content="Islamic Inheritance Laws: Understanding the Rules and Distribution">
+    <meta name="twitter:description" content="Learn about Islamic inheritance laws, rules, and distribution to ensure fair and legal wealth distribution in accordance with Islamic principles.">
+    <meta name="twitter:image" content="https://islamic-inheritance.mohammadharoon.com/images/islamic-inheritance-calculator-english.png">
+    
+    <meta name="robots" content="max-image-preview:standard">
+
+    <link type="text/css" rel="stylesheet" href="/css/inheritance.css">
+
+    
+    <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<!--<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">-->
+    
+    <!-- Google Adsense -->
+    <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9714425651402440" crossorigin="anonymous"></script>-->
+    
+</head>
+
+<body class="">
+
+<div class="container-fluid">
+
+<div class="header-wrap">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="/">Islamic Inheritance <span>Know about Islamic Inheritance Shares & Rules</span></a>
+            </div>
+            <div class="header-right">
+            	<ul>
+                    <li class="menu-has-child">
+                        <a href="#">Inheritance</a>
+                        <ul class="sub-menu">
+                            <li><a href="/en/online-inheritance-calculater/">Online Calculator</a></li>
+                            <li><a href="/inheritance-blog/">Blog</a></li>
+                            <li><a href="/inheritance-blog/islamic-inheritance-laws-rules/">Rules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/online-zakat-calculator/">Zakat Calculator</a></li>
+                </ul>
+	            <div class="theme-mode">
+	                <button id="toggle-mode">Light Dark</button>
+	            </div>            	
+            </div>
+        </header>
+    </div>
+</div>
+<style>
+
+    .direct-inheritance{
+        padding: 50px 0;
+        display: flex;
+    }
+    .container-fluid{
+        margin-bottom: 0;
+    }
+    .container{
+        padding: 0 20px;
+        max-width: 1170px;
+/*         margin: 90px auto 0; */
+    }
+    .field-group{
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        padding: 0 5px;
+    }
+    .field-group input[type="radio"]{
+        position: absolute;
+        top: -100px;
+        left: -100px;
+    }
+    .field-group input[type="radio"] + label{
+        background: #f0f3f5;
+        padding: 10px 25px;
+        min-height: 60px;
+        display: flex;
+        cursor: pointer;
+        font-size: 20px;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid transparent;
+    }
+    .field-group input[type="radio"] + label:hover{
+        background: #87bba2;
+    }
+    .field-group input[type="radio"]:checked + label{
+        background: #87bba2;
+        border-color: #55828b;
+    }
+    .field-group label{
+        width: 100%;
+        display: block;
+        margin: 0 20px 0 0;
+    }
+    .field-group input[type="number"]{
+        width: 100%;
+        height: 45px;
+        font-size: 18px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 1px solid #abacac;
+    }
+    .field-group a,
+    .field-group button{
+        color: #fff;
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        background: #3b6064;
+        margin-right: 20px;
+        display: inline-flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .field-group a:hover,
+    .field-group button:hover{
+        background: #364958;
+    }
+    .field-group a.disable,
+    .field-group button.disable{
+        background: #ccc;
+        pointer-events: none;
+    }
+    .results td,
+    .results th{
+        text-align: center;
+        padding: 10px;
+    }
+    .lead-info{
+        margin-bottom: 50px;
+    }
+    .field-box{
+/*             display: none; */
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding: 30px 25px 10px;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    }
+    .field-box h3 span{ 
+        display: inline-block;
+    }
+    .field-box.active{
+        display: block !important;
+    }
+    .field-box.mother-box.active{
+        display: block !important;
+    }
+    h1{
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+    h2{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    h3{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .shares-result{
+        width: 100%;
+        margin-bottom: 50px;
+        border-collapse: collapse;
+    }
+    .shares-result td,
+    .shares-result th{
+        text-align: left;
+        padding: 15px 25px;
+        border: 1px solid #dddddd;
+    }
+    .shares-result tr:nth-child(even){
+        background-color: #E7E9EB;
+    }
+    .amount-col{
+        display: flex;
+        justify-content: space-between;
+    }
+    .amount-col label{
+        font-size: 16px;
+    }
+    .tableFields{
+        border: 1px solid #ddd;
+        margin-bottom: 40px;
+    }
+    .tableFields td,
+    .tableFields th{
+        padding: 10px;
+        border: 1px solid #ddd;
+        white-space: nowrap;
+/*         padding-left: 30px; */
+    }
+    .tableFields td input{
+        width: 60px;
+    }
+    .hidden-fields{
+        display: none;
+    }
+    .show-fields td a{
+        color: #000;
+        opacity: .8;
+    }
+    .show-fields td a:hover{
+        opacity: 1;
+    }
+    .depending-sharer{
+        padding-left: 3px;
+    }
+    .depending-sharer.level-two{
+        margin-left: 33px;
+    }
+    .depending-sharer.level-three{
+        margin-left: 63px;
+    }
+    .depending-sharer.level-four{
+        margin-left: 93px;
+    }
+    .depending-sharer.level-five{
+        margin-left: 123px;
+    }
+    .depending-sharer::before{
+        content: "|";
+        display: inline-block;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+    }
+    .d-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .miras-table{
+        max-width: 335px;
+        margin-top: 83px;
+    }
+    .miras-main{
+        margin-right: 50px;
+    }
+    .miras-table .field-box{
+        padding: 20px 15px 25px;
+    }
+    .email-group input{
+        padding: .50rem 1rem;
+        min-height: 2.75rem;
+        font-size: 1.05rem;
+        border-radius: .5rem;
+    }
+    .miras-table h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .miras-table .field-group{
+        margin-bottom: 0;
+    }
+    @media (max-width: 1299px) {
+        .miras-main{
+            max-width: 65%;
+        }
+    }
+    @media (max-width: 1199px) {
+        .miras-table{
+            max-width: 40%;
+        }
+        .miras-main{
+            max-width: 60%;
+        }
+    }
+    @media (max-width: 1023px) {
+        h1{
+            font-size: 36px;
+            margin-bottom: 38px;
+        }
+        h2{
+            font-size: 32px;
+        }
+        .miras-table{
+            margin-top: 76px;
+        }
+        .miras-main{
+            margin-right: 30px;
+        }
+        
+    }
+    @media (max-width: 991px) {
+        .container{
+            margin: auto 0;
+        }
+        h1{
+            font-size: 32px;
+            margin-bottom: 34px;
+        }
+        h2{
+            font-size: 28px;
+            margin-bottom: 26px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .lead-info{
+            margin-bottom: 40px;
+        }
+        .direct-inheritance{
+            display: block;
+        }
+        .miras-table{
+            margin-top: 0;
+            max-width: 100%;
+        }
+        .miras-main{
+            margin-right: 0;
+            max-width: 100%;
+        }
+        tr td:last-child{
+            width: 120px;
+        }
+    }
+    @media (max-width: 767px) {
+        .container{
+            margin: 50px auto 0;
+        }
+        h1{
+            font-size: 28px;
+            margin-bottom: 26px;
+        }
+        h2{
+            font-size: 26px;
+        }
+        .amount-col{
+            flex-wrap: wrap;
+        }
+        .field-group{
+            max-width: 50%;
+            width: 100%;
+        }
+        /* tr td:first-child{
+            max-width: 250px;
+        } */
+        tr td {
+            font-size: 15;
+        }
+        .shares-result td,
+        .shares-result th{
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+    @media (max-width: 575px) {
+        .field-group{
+            max-width: 100%;
+            width: 100%;
+        }
+        h1{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h2{
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .lead-info{
+            margin-bottom: 35px;
+        }
+        /* tr td:first-child{
+            max-width: 200px;
+        } */
+        tr td {
+            font-size: 15px;
+        }
+        .depending-sharer.level-two{
+            margin-left: 15px;
+        }
+        .depending-sharer.level-three{
+            margin-left: 40px;
+        }
+        .depending-sharer.level-four{
+            margin-left: 63px;
+        }
+        .depending-sharer.level-five{
+            margin-left: 80px;
+        }
+        .amount-col label{
+            font-size: 14px;
+        }
+        .direct-inheritance{
+            max-width: 100%;
+        }
+        .direct-inheritance .d-flex .theme-btn{
+            min-width: 130px;
+        }
+    }
+</style>
+<div class="container-fluid">
+    <div class="container">
+        <!-- <div class="lead-info">
+            <h1>Calculate Inheritance</h1>
+            <h2>Enter Heir Details</h2>
+            <p>This tool will ask questions to obtain the deceased's heir details and based on the Shari'a Law, calculate the inheritance.</p>
+        </div> -->
+        <div class="content-block">
+            <form class="left-sec direct-inheritance" action="https://zakat.panjinawangkung.com/inheritance.html" method="post">
+                <div class="miras-main">
+                    <input type="hidden" name="calculate" value="yes">
+                    <h2>Enter Details</h2>
+                    <div class="field-box active">
+                        <h3>Enter Values for Different Assets</h3>
+                        <div class="amount-col total-cash">
+                            <div class="field-group amount-input">
+                                <label for="totalCash">Cash</label>
+                                <input type="number" min="0" name="totalCash" id="totalCash" placeholder="0">
+                            </div>
+                            <div class="field-group amount-input">
+                                <label for="totalGoldInAmount">Value of Gold</label>
+                                <input type="number" min="0" name="totalGoldInAmount" id="totalGoldInAmount" placeholder="0">
+                            </div>
+                            <div class="field-group amount-input">
+                                <label for="totalPropertyInAmount">Value of Properties</label>
+                                <input type="number" min="0" name="totalPropertyInAmount" id="totalPropertyInAmount" placeholder="0">
+                            </div>
+                            <div class="field-group amount-input">
+                                <label for="cashInBonds">Bonds / Shares</label>
+                                <input type="number" min="0" name="cashInBonds" id="cashInBonds" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-box active">
+                        <h3>Expenses, Loans and Bequeath</h3>
+                        <div class="amount-col expense-field">
+                            <div class="field-group expense-input amount-input">
+                                <label for="funeralBurial">Funeral & Burial</label>
+                                <input type="number" min="0" name="funeralBurial" id="funeralBurial" placeholder="0">
+                            </div>
+                            <div class="field-group expense-input amount-input">
+                                <label for="dowerAmount">Dower Amount</label>
+                                <input type="number" min="0" name="dowerAmount" id="dowerAmount" placeholder="0">
+                            </div>
+                            <div class="field-group expense-input amount-input">
+                                <label for="loanPayment">Loan Payment</label>
+                                <input type="number" min="0" name="loanPayment" id="loanPayment" placeholder="0">
+                            </div>
+                            <div class="field-group amount-input">
+                                <label for="bequeathAmount">Bequeath Amount</label>
+                                <input type="number" min="0" max="5" name="bequeathAmount" id="bequeathAmount" placeholder="0">
+                                <div class="warning-note">Pleae enter value less then or equal to <span class="bequeathVal"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-box active amount-box">
+                        <div class="d-flex">
+                            <h3>Total Distributable Amount <em class="amountSec">( = <em class="totalAmount"></em> <em class="minus-sign">-</em> <em class="totalExpense"></em> )</em></h3>
+                            <a href="#" class="theme-btn">More Assets</a>
+                        </div>
+                        <div class="field-group">
+                            <label for="totalamount">Enter amount</label>
+                            <input type="number" min="1" name="totalAmount" id="totalamount" required="required" placeholder="100" value="">
+                        </div>
+                    </div>
+                </div>
+               <div class="miras-table">
+                    <table cellpadding="4" class="tableFields" cellspacing="0" width="100%">
+                    <tbody>
+                        <tr style="background-color: #1C5E55; color: White; font-weight: bold;">
+                            <td style="width: 400px;">Relative Name</td>
+                            <td>Count</td>
+                        </tr>
+                        <tr class="trFields1">
+                            <td>Husband</td>
+                            <td><input name="husband" type="number" min="0" max="1" maxlength="1" id="husband" class="tbCounts"></td>
+                        </tr>
+                        <tr>
+                            <td>Wives</td>
+                            <td><input name="wives" type="number" min="0" max="4" maxlength="1" id="wives" class="tbCounts"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Daughters</td>
+                            <td><input name="daughters" type="number" min="0" maxlength="2" id="tb4" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1">
+                            <td>Sons</td>
+                            <td><input name="sons" type="number" min="0" maxlength="2" id="tb3" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1">
+                            <td><span class="depending-sharer level-one" style="position: relative; top: -6px;">__</span> Grandsons</td>
+                            <td><input name="grandSons" type="number" min="0" maxlength="2" id="tb5" class="tbCounts"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="depending-sharer level-one" style="position: relative; top: -6px;">__</span> Granddaughters</td>
+                            <td><input name="grandDaughters" type="number" min="0" maxlength="2" id="tb6" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1">
+                            <td>Father</td>
+                            <td><input name="father" type="number" value="" min="0" max="1" maxlength="1" id="tb7" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1">
+                            <td><span class="depending-sharer level-one" style="position: relative; top: -6px;">__</span> Grandfather</td>
+                            <td><input name="grandFather" type="number" value="" min="0" max="1" maxlength="1"  id="tb9" class="tbCounts"></td>
+                        </tr>
+                        <tr>
+                            <td>Mother</td>
+                            <td><input name="mother" type="number" value="" min="0" max="1" maxlength="1" id="tb8" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1">
+                            <td><span class="depending-sharer level-one" style="position: relative; top: -6px;">__</span> Maternal Grandmother</td>
+                            <td><input name="maternalGrandMother" type="number" value="" min="0" max="1" maxlength="1" id="tb11" class="tbCounts"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="depending-sharer level-one" style="position: relative; top: -6px;">__</span> Paternal Grandmother</td>
+                            <td><input name="paternalGrandMother" type="number" value="" min="0" max="1" maxlength="1" id="tb10" class="tbCounts"></td>
+                        </tr>
+                        
+                        <tr class="hidden-fields">
+                            <td>Maternal Brothers</td>
+                            <td><input name="brothersMaternal" type="number" value="" min="0" max="99" maxlength="2" id="tb16" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1 hidden-fields">
+                            <td>Maternal Sisters</td>
+                            <td><input name="sistersMaternal" type="number" value="" min="0" max="99" maxlength="2" id="tb17" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1 hidden-fields">
+                            <td>Full Sisters</td>
+                            <td><input name="sisters" type="number" value="" min="0" max="99" maxlength="2" id="tb13" class="tbCounts"></td>
+                        </tr>
+                        <tr class="hidden-fields">
+                            <td>Full Brothers</td>
+                            <td><input name="brothers" type="number" value="" min="0" max="99" maxlength="2" id="tb12" class="tbCounts"></td>
+                        </tr>
+                        <tr class="hidden-fields">
+                            <td><span class="depending-sharer level-one" style="position: relative; top: -6px;">__</span> Paternal Brothers</td>
+                            <td><input name="brothersPaternal" type="number" value="" min="0" max="99" maxlength="2" id="tb14" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1 hidden-fields">
+                            <td><span class="depending-sharer level-one" style="position: relative; top: -6px;">__</span> Paternal Sisters</td>
+                            <td><input name="sistersPaternal" type="number" value="" min="0" max="99" maxlength="2" id="tb15" class="tbCounts"></td>
+                        </tr>
+                        
+                        <tr class="hidden-fields">
+                            <td>Full Nephews</td>
+                            <td><input name="sonsFromBrothers" type="number" value="" min="0" max="99" maxlength="2" id="tb18" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1 hidden-fields">
+                            <td><span class="depending-sharer level-one" style="position: relative; top: -6px;">__</span> Paternal Nephews</td>
+                            <td><input name="sonsFromFatherHalfBrothers" type="number" value="" min="0" max="99" maxlength="2" id="tb19" class="tbCounts"></td>
+                        </tr>
+                        <tr class="hidden-fields">
+                            <td><span class="depending-sharer level-two" style="position: relative; top: -6px;">__</span> Full Paternal Uncles</td>
+                            <td><input name="brothersFromFather" type="number" value="" min="0" max="99" maxlength="2" id="tb22" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1 hidden-fields">
+                            <td><span class="depending-sharer level-three" style="position: relative; top: -6px;">__</span> Paternal Paternal Uncles</td>
+                            <td><input name="halfBrothersFromFather" type="number" value="" min="0" max="99" maxlength="2" id="tb23" class="tbCounts"></td>
+                        </tr>
+                        <tr class="hidden-fields">
+                            <td><span class="depending-sharer level-four" style="position: relative; top: -6px;">__</span> Full Cousins</td>
+                            <td><input name="sonsFromFatherBrothers" type="number" value="" min="0" max="99" maxlength="2" id="tb24" class="tbCounts"></td>
+                        </tr>
+                        <tr class="trFields1 hidden-fields">
+                            <td><span class="depending-sharer level-five" style="position: relative; top: -6px;">__</span> Paternal Cousins</td>
+                            <td><input name="sonsFromFatherHalfBrothers" type="number" value="" min="0" max="99" maxlength="2" id="tb25" class="tbCounts"></td>
+                        </tr>
+                        <tr class="show-fields">
+                            <td colspan="3"><a href="#">Show more/less heirs</a></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="sendMail" name="send_mail">
+                        <label for="sendMail">Do you want the results in your email?</label>
+                    </div>
+                    <div class="field-box email-group">
+                        <h3>Enter Email</h3>
+                        <div class="field-group">
+                            <input type="text" name="user_email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="field-group actions-buttons">
+                        <input type="submit" id="calculate" value="Calculate">
+                        <input type="reset" id="reset" value="Reset">
+                    </div> 
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer-wrap">
+	    <div class="container">
+	        <footer>
+	            <p>&copy; 2023 <a href="https://www.panjinawangkung.com/">panjinawangkung.com</a> All Rights Reserved. </p>
+	        </footer>
+	    </div>
+	</div>
+</div>
+
+<script type="text/javascript" src="/jquery.js"></script>
+<script type="text/javascript" src="/scripts.js"></script>
+
+</body>
+</html>
